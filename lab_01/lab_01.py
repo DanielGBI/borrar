@@ -1,2 +1,3 @@
-print(1)
-dvdbdsjbvds
+from random import randint
+for i in range (randint())
+
