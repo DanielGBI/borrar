@@ -23,7 +23,7 @@ def on_draw(delta_time):
     """"""
     arcade.start_render()
     draw_grass()
-    draw_robot(on_draw.robot_x,0)
+    draw_robot(on_draw.robot_x,-300)
 
     on_draw.robot_x += 1
 on_draw.robot_x = -300
