@@ -96,3 +96,24 @@ def main():
 
 
 main()
+class Ship(arcade.Sprite):
+    def __init__(self,position_x, position_y,change_y,change_x):
+
+        self.change_x = 0
+        self.change_y = 0
+        self.position_x = position_x
+        self.position_y = position_y
+    def update(self):
+
+            self.position_y += self.change_y
+            self.position_x += self.change_x
+
+
+        for enemigo in self.enemigo_list:
+            ataque = arcade.Sprite("coin_01.png", SPRITE_SCALING_BULLET)
+            start_x = enemigo.center_x
+            start_y = enemigo.center_y
+            ataque.center_x = start_x
+            ataque.center_y = start_y
+            ataque.change_y = BULLET_SPEED
+            self.ataques_list.append(ataque)
