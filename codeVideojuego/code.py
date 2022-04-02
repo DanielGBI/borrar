@@ -3,7 +3,7 @@ import random
 import arcade
 from pyglet.math import Vec2
 
-CAMERA_SPEED=1
+
 
 SPRITE_SCALING_PLAYER= 0.2
 SPRITE_SCALING_BULLET= 0.2
